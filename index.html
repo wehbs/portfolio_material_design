@@ -28,10 +28,11 @@
 
   <!-- Materialize CSS Library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- Custom Fonts -->
-  <!-- <script src="https://use.fontawesome.com/7c7cf4a181.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  <script src="https://use.fontawesome.com/7c7cf4a181.js"></script>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet"> -->
@@ -44,24 +45,85 @@
 
 <body>
 
+   <!-- Navigation -->
   <div class="navbar-fixed">
-  <nav>
-    <div class="nav-wrapper container">
-      <a href="#" class="brand-logo">Logo</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+    <nav class="white">
+      <div class="nav-wrapper container">
+        <a href="#!" class="brand-logo">
+          <i class="material-icons grey-text">code</i>
+        </a>
+        <a href="#" data-activates="mobile-screen" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a href="#" class="grey-text">About</a>
+          </li>
+          <li>
+            <a href="#" class="grey-text">Portfolio</a>
+          </li>
+          <li>
+            <a href="#" class="grey-text">Contact</a>
+          </li>
+        </ul>
+        <ul class="side-nav" id="mobile-screen">
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Portfolio</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Intro Header -->
+  <header class="intro">
+    <div class="row">
+      <div class="col s12 center-align">
+        <h1 class="grey-text">Shamir Wehbe</h1>
+        <p class="flow-text grey-text">Full Stack Web Developer</p>
+        <a href="#about" class="btn-floating btn-large waves-effect waves-light waves-circle grey">
+          <i class="large material-icons">expand_more</i>
+        </a>
+      </div>
     </div>
-  </nav>
-</div>
+  </header>
+
+
+
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li>
+        <a class="btn-floating red">
+          <i class="material-icons">insert_chart</i>
+        </a>
+      </li>
+      <li>
+        <a class="btn-floating yellow darken-1">
+          <i class="material-icons">format_quote</i>
+        </a>
+      </li>
+      <li>
+        <a class="btn-floating green">
+          <i class="material-icons">publish</i>
+        </a>
+      </li>
+      <li>
+        <a class="btn-floating blue">
+          <i class="material-icons">attach_file</i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
 
 
   <!-- Added link to firebase -->

@@ -1,0 +1,21 @@
+
+p {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 21px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 100px;
+}
+
+.intro {
+    width: 100%;
+    height: auto;
+  }
+
+  nav ul li a:hover {
+    background-color: white;
+ }
