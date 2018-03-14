@@ -1,21 +1,46 @@
-
-p {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 21px;
+/* Custom container applied to all bold elements except for navbar */
+.my-container {
+    margin: auto;
+    width: 95%;
 }
-
+/* Shamir Wehbe header */
 h1 {
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-weight: 600;
     font-size: 100px;
-}
-
-.intro {
-    width: 100%;
-    height: auto;
+  }
+  @media (max-width: 640px) {
+    h1 {
+      font-size: 50px;
+    }
   }
 
-  nav ul li a:hover {
-    background-color: white;
- }
+h2 {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+/* Full Stack font */
+p.white-text {
+  font-family: "Source Code Pro", monospace;
+  font-size: 21px;
+}
+/* Background for header */
+.intro {
+  background: url(../img/atom-bg.jpg) no-repeat bottom center scroll;
+  background-size: cover;
+  padding: 50px;
+}
+/* Change materialize default color for links */
+nav ul li a:hover {
+  background-color: white;
+}
+/* Makes the fade in effect work properly */
+#intro, #about, #portfolio {
+    opacity: 0;
+}
+/* Blue hover color for navbar links */
+.fa-2x:hover {
+    color: #0074D9;
+}
+
+

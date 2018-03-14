@@ -25,45 +25,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Shamir's Portfolio</title>
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+
+  <!-- Colors CSS -->
+  <link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
 
   <!-- Materialize CSS Library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- Custom Fonts -->
-  <script src="https://use.fontawesome.com/7c7cf4a181.js"></script>
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <!-- <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet"> -->
 
   <!-- CSS -->
-  <link href="css/portfolio.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/portfolio.css">
   <!-- <link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css"> -->
 
 </head>
 
 <body>
 
-   <!-- Navigation -->
+  <!-- Navigation -->
   <div class="navbar-fixed">
     <nav class="white">
-      <div class="nav-wrapper container">
-        <a href="#!" class="brand-logo">
-          <i class="material-icons grey-text">code</i>
+      <div class="nav-wrapper my-container">
+        <a href="#" class="brand-logo">
+          <i class="fas fa-code grey-text"></i>
         </a>
         <a href="#" data-activates="mobile-screen" class="button-collapse">
           <i class="material-icons grey-text">menu</i>
         </a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
-            <a href="#" class="grey-text">About</a>
+            <a target="_blank" href="https://www.linkedin.com/in/shamirwehbe" class="grey-text">
+              <i class="fab fa-linkedin fa-2x fa-fw" data-fa-transform="down-3"></i>
+            </a>
           </li>
           <li>
-            <a href="#" class="grey-text">Portfolio</a>
+            <a target="_blank" href="https://github.com/wehbs" class="grey-text">
+              <i class="fab fa-github fa-2x fa-fw" data-fa-transform="down-3"></i>
+            </a>
           </li>
           <li>
-            <a href="#" class="grey-text">Contact</a>
+            <a href="mailto:shamirwehbe@me.com" class="grey-text">
+              <i class="fas fa-envelope fa-2x fa-fw" data-fa-transform="down-3"></i>
+            </a>
           </li>
         </ul>
         <ul class="side-nav" id="mobile-screen">
@@ -82,22 +93,144 @@
   </div>
 
   <!-- Intro Header -->
-  <header class="intro">
+  <div class="intro my-container">
     <div class="row">
-      <div class="col s12 center-align">
-        <h1 class="grey-text">Shamir Wehbe</h1>
-        <p class="flow-text grey-text">Full Stack Web Developer</p>
-        <a href="#about" class="btn-floating btn-large waves-effect waves-light waves-circle grey">
-          <i class="large material-icons">expand_more</i>
-        </a>
+      <div class="col s12 center-align" id="intro">
+        <h1 class="white-text">Shamir Wehbe</h1>
+        <p class="flow-text white-text">Full Stack Web Developer</p>
       </div>
     </div>
-  </header>
+  </div>
 
 
+  <!-- About Section -->
+  <div class="my-container" id="about">
+    <div class="row valign-wrapper center-align">
+      <div class="col s12 m8 offset-m4">
+        <h2 class="grey-text">About</h2>
+      </div>
+    </div>
+    <div class="row valign-wrapper center-align">
+      <div class="col s12 m4">
+        <img src="img/about-bg.jpg" class="responsive-img z-depth-4" style="max-width:80%;min-width:50%;">
+      </div>
+      <div class="col s12 m8">
+        <p class="grey-text flow-text">Web developer able to build a sophisticated website with full database backend all the way from mockup to rollout.
+          Detailed oriented, focused, autodidactic, excellent interpersonal and communication skills with a passion for providing
+          the right solutions to clients. The ability to solve problems using logical reasoning and creativity. Proven ability
+          to see projects through from beginning to end. Experienced in building and leading large technical teams.</p>
+      </div>
+    </div>
+  </div>
 
-  <div class="fixed-action-btn">
-    <a class="btn-floating btn-large red">
+  <!-- Portfolio Section -->
+  <div class="my-container" id="portfolio">
+    <div class="row valign-wrapper center-align">
+      <div class="col s12">
+        <h2 class="grey-text">Portfolio</h2>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col s4">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/triviaGame.png">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p class="grey-text">I am a very simple card. I am good at containing small bits of information. I am convenient because I require
+              little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col s4">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/hangmanGame.png">
+            <span class="card-title">Card Title</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
+              little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col s4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/triviaGame.png">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p class="grey-text">I am a very simple card. I am good at containing small bits of information. I am convenient because I require
+                little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+      <div class="col s4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/triviaGame.png">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p class="grey-text">I am a very simple card. I am good at containing small bits of information. I am convenient because I require
+                little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+      <div class="col s4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/triviaGame.png">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p class="grey-text">I am a very simple card. I am good at containing small bits of information. I am convenient because I require
+                little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 -->
+      <div class="col s4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/triviaGame.png">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p class="grey-text">I am a very simple card. I am good at containing small bits of information. I am convenient because I require
+                little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- <div class="fixed-action-btn">
+    <a class="btn-floating btn-large grey">
       <i class="large material-icons">mode_edit</i>
     </a>
     <ul>
@@ -122,7 +255,7 @@
         </a>
       </li>
     </ul>
-  </div>
+  </div> -->
 
 
 
@@ -131,9 +264,6 @@
 
   <!-- Added link to the jQuery Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
   <!-- Materialize JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
