@@ -31,6 +31,7 @@ $(function () {
 
 
 // jQuery to collapse the navbar shadow on scroll
+// =================================================
 function removeNavShadow () {
     var scroll = $(window).scrollTop();
     if (scroll === 0) {
@@ -40,13 +41,25 @@ function removeNavShadow () {
       $("nav.white").removeClass("z-depth-0");
       }
     }
-
 removeNavShadow();
-
 $(window).scroll(function () {
       removeNavShadow();
   });
+// =================================================
 
+
+// jQuery to remove valign-wrapper on small screen because is breaks the columns
+// =================================================
+function checkWidth () {
+  if ($(window).width() < 600) {
+    $("#about").removeClass("valign-wrapper");
+} else {
+  $("#about").addClass("valign-wrapper");
+  }
+}
+checkWidth();
+$(window).resize(checkWidth);
+// =================================================
 
 
 // Initiate mobile screen sidenav for materialize css
@@ -62,7 +75,19 @@ var options = [
   }},
   {selector: '#portfolio', offset: 0, callback: function(el) {
     Materialize.fadeInImage($(el));
+  }},
+  {selector: '#d1', offset: 0, callback: function(el) {
+    Materialize.fadeInImage($(el));
+  }},
+  {selector: '#d2', offset: 0, callback: function(el) {
+    Materialize.fadeInImage($(el));
   }}
+  // {selector: '#pic', offset: 250, callback: function(el) {
+  //   Materialize.showStaggeredList($(el));
+  // }},
+  // {selector: '#test', offset: 150, callback: function(el) {
+  //   Materialize.showStaggeredList($(el));
+  // }}
 ];
 Materialize.scrollFire(options);
 

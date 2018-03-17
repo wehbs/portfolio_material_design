@@ -1,6 +1,5 @@
 /* Custom container applied to all bold elements except for navbar */
-.my-container {
-    margin: auto;
+.container {
     width: 95%;
 }
 /* Shamir Wehbe header */
@@ -8,7 +7,7 @@ h1 {
     font-weight: 600;
     font-size: 100px;
   }
-  @media (max-width: 640px) {
+  @media (max-width: 600px) {
     h1 {
       font-size: 50px;
     }
@@ -19,13 +18,13 @@ h2 {
     font-size: 50px;
 }
 
-/* Full Stack font */
+/* Full Stack Web Developer font */
 p.white-text {
   font-family: "Source Code Pro", monospace;
   font-size: 21px;
 }
 /* Background for header */
-.intro {
+#intro {
   background: url(../img/atom-bg.jpg) no-repeat bottom center scroll;
   background-size: cover;
   padding: 50px;
@@ -35,12 +34,80 @@ nav ul li a:hover {
   background-color: white;
 }
 /* Makes the fade in effect work properly */
-#intro, #about, #portfolio {
+.divider, #intro, #about, #portfolio {
     opacity: 0;
+}
+
+#about, #portfolio {
+    /* padding-top: 100px; */
 }
 /* Blue hover color for navbar links */
 .fa-2x:hover {
-    color: #0074D9;
+    color: #448aff;
+}
+
+.section {
+    /* margin-bottom: 10%; */
+}
+
+.about-text {
+    font-weight: 400;
 }
 
 
+.bar{
+    height: 30px;
+    max-width: 800px;
+    margin: 0 auto 10px auto;
+    line-height: 30px;
+    font-size: 16px;
+    color: white;
+    padding: 0 0 0 10px;
+    position: relative;
+  }
+  .bar::before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 30px;
+    top: 0;
+    z-index: -2;
+    background: #ecf0f1;
+  }
+  .bar::after{
+    content: '';
+    height: 30px;
+    transition: 0.7s;
+    display: block;
+    width: 100%;
+    -webkit-animation: bar-before 1 5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  @-webkit-keyframes bar-before{
+    0%{
+      width: 0px;
+    }
+    100%{
+      width: 100%;
+    }
+  }
+
+  .bar1::after{
+    max-width: 90%;
+    background: #ff9e80;    
+  }
+
+  .bar2::after{
+    max-width: 60%;
+    background: #e91e63;    
+  }
+
+  .bar3::after{
+    max-width: 70%;
+    background: #ab47bc;    
+  }

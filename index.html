@@ -26,10 +26,7 @@
 
   <title>Shamir's Portfolio</title>
   <!-- Normalize CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-
-  <!-- Colors CSS -->
-  <link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"> -->
 
   <!-- Materialize CSS Library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -53,26 +50,26 @@
   <!-- Navigation -->
   <div class="navbar-fixed">
     <nav class="white">
-      <div class="nav-wrapper my-container">
+      <div class="nav-wrapper container">
         <a href="#" class="brand-logo">
-          <i class="fas fa-code grey-text"></i>
+          <i class="fas fa-code grey-text text-darken-1"></i>
         </a>
         <a href="#" data-activates="mobile-screen" class="button-collapse">
-          <i class="material-icons grey-text">menu</i>
+          <i class="material-icons grey-text text-darken-1">menu</i>
         </a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
-            <a target="_blank" href="https://www.linkedin.com/in/shamirwehbe" class="grey-text">
+            <a target="_blank" href="https://www.linkedin.com/in/shamirwehbe" class="grey-text text-darken-1">
               <i class="fab fa-linkedin fa-2x fa-fw" data-fa-transform="down-3"></i>
             </a>
           </li>
           <li>
-            <a target="_blank" href="https://github.com/wehbs" class="grey-text">
+            <a target="_blank" href="https://github.com/wehbs" class="grey-text text-darken-1">
               <i class="fab fa-github fa-2x fa-fw" data-fa-transform="down-3"></i>
             </a>
           </li>
           <li>
-            <a href="mailto:shamirwehbe@me.com" class="grey-text">
+            <a href="mailto:shamirwehbe@me.com" class="grey-text text-darken-1">
               <i class="fas fa-envelope fa-2x fa-fw" data-fa-transform="down-3"></i>
             </a>
           </li>
@@ -93,142 +90,101 @@
   </div>
 
   <!-- Intro Header -->
-  <div class="intro my-container">
-    <div class="row">
-      <div class="col s12 center-align" id="intro">
-        <h1 class="white-text">Shamir Wehbe</h1>
-        <p class="flow-text white-text">Full Stack Web Developer</p>
-      </div>
+  <div class="row container center-align section">
+    <div class="col s12" id="intro">
+      <h1 class="white-text">Shamir Wehbe</h1>
+      <p class="flow-text white-text">Full Stack Web Developer</p>
     </div>
   </div>
+
+  <!-- Light grey line to divide content -->
+  <div class="divider container" id="d1"></div>
 
 
   <!-- About Section -->
-  <div class="my-container" id="about">
-    <div class="row valign-wrapper center-align">
-      <div class="col s12 m8 offset-m4">
-        <h2 class="grey-text">About</h2>
-      </div>
+  <div class="row container section valign-wrapper" id="about">
+
+    <!-- Photo large screen-->
+    <div class="col s12 m4 center-align hide-on-small-only">
+      <img src="img/about-shamir-sp-sidelook.png" style="max-width:60%;min-width:60%;">
     </div>
-    <div class="row valign-wrapper center-align">
-      <div class="col s12 m4">
-        <img src="img/about-bg.jpg" class="responsive-img z-depth-4" style="max-width:80%;min-width:50%;">
-      </div>
-      <div class="col s12 m8">
-        <p class="grey-text flow-text">Web developer able to build a sophisticated website with full database backend all the way from mockup to rollout.
-          Detailed oriented, focused, autodidactic, excellent interpersonal and communication skills with a passion for providing
-          the right solutions to clients. The ability to solve problems using logical reasoning and creativity. Proven ability
-          to see projects through from beginning to end. Experienced in building and leading large technical teams.</p>
-      </div>
+
+    <!-- Photo small screen-->
+    <div class="col s12 m4 center-align show-on-small hide-on-med-and-up">
+      <img src="img/about-shamir-sp-downlook.png" style="max-width:60%;min-width:60%;">
     </div>
+
+    <!-- About description -->
+    <div class="col s12 m8">
+      <h2 class="grey-text text-darken-1 center-align">About</h2>
+      <p class="grey-text text-darken-1 flow-text about-text">
+        Web developer able to build a sophisticated website with full database backend all the way from mockup to rollout. Detailed
+        oriented, focused, autodidactic, excellent interpersonal and communication skills with a passion for providing the
+        right solutions to clients. The ability to solve problems using logical reasoning and creativity. Proven ability
+        to see projects through from beginning to end. Experienced in building and leading large technical teams.
+      </p>
+    </div>
+
   </div>
 
+
+  <!-- Light grey line to divide content -->
+  <div class="divider container" id="d2"></div>
+
+
   <!-- Portfolio Section -->
-  <div class="my-container" id="portfolio">
-    <div class="row valign-wrapper center-align">
-      <div class="col s12">
-        <h2 class="grey-text">Portfolio</h2>
+  <div class="row container section" id="portfolio">
+    <h2 class="grey-text text-darken-1 center-align">Portfolio</h2>
+
+    <!-- Card 1 -->
+    <div class="col s6 m4">
+      <div class="card blue accent-2 hoverable">
+        <div class="card-content white-text">
+          <span class="card-title">Card Title</span>
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little
+            markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">Demo</a>
+          <a href="#">GitHub</a>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <!-- Card 1 -->
-      <div class="col s4">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/triviaGame.png">
-            <span class="card-title">Card Title</span>
-          </div>
-          <div class="card-content">
-            <p class="grey-text">I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-              little markup to use effectively.</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-          </div>
-        </div>
-      </div>
-      <!-- Card 2 -->
-      <div class="col s4">
-        <div class="card">
-          <div class="card-image">
-            <img src="img/hangmanGame.png">
-            <span class="card-title">Card Title</span>
-          </div>
-          <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-              little markup to use effectively.</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-          </div>
-        </div>
-      </div>
-      <!-- Card 3 -->
-      <div class="col s4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/triviaGame.png">
-              <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-              <p class="grey-text">I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-                little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-        </div>
-        <!-- Card 4 -->
-      <div class="col s4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/triviaGame.png">
-              <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-              <p class="grey-text">I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-                little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-        </div>
-        <!-- Card 5 -->
-      <div class="col s4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/triviaGame.png">
-              <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-              <p class="grey-text">I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-                little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-        </div>
-        <!-- Card 6 -->
-      <div class="col s4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/triviaGame.png">
-              <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-              <p class="grey-text">I am a very simple card. I am good at containing small bits of information. I am convenient because I require
-                little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-          </div>
-        </div>
+
+
+
+<div class="col s6 m4">
+
+    <div class="graph-cont">
+        <div class="bar bar1"><i class="fab fa-html5"></i> HTML5</div>
+        <div class="bar bar2"><i class="fab fa-css3-alt"></i> CSS3</div>
+        <div class="bar bar3"><i class="fab fa-js"></i> JavaScript</div>               
     </div>
+
+</div>
+
+
+    <!-- Card 2 -->
+    <div class="col s6 m4">
+      <div class="card light-green hoverable">
+        <div class="card-content white-text">
+          <span class="card-title">Card Title</span>
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little
+            markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#" class="black-text">Demo</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+
+
   </div>
+
+
+
   <!-- <div class="fixed-action-btn">
     <a class="btn-floating btn-large grey">
       <i class="large material-icons">mode_edit</i>
