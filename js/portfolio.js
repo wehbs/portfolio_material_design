@@ -29,6 +29,8 @@ $(function () {
 //   });
 
 
+// AniView for AnimationEvent.CSS
+$('.aniview').AniView();
 
 // jQuery to collapse the navbar shadow on scroll
 // =================================================
@@ -65,31 +67,44 @@ $(window).resize(checkWidth);
 // Initiate mobile screen sidenav for materialize css
 $(".button-collapse").sideNav();
 
+
+
+
+
+
+
+
+
+
+
+
+
 // ScrollFire for effects when scrolling on the page
-var options = [
-  {selector: '#intro', offset: 0, callback: function(el) {
-    Materialize.fadeInImage($(el));
-  } },
-  {selector: '#about', offset: 0, callback: function(el) {
-    Materialize.fadeInImage($(el));
-  }},
-  {selector: '#portfolio', offset: 0, callback: function(el) {
-    Materialize.fadeInImage($(el));
-  }},
-  {selector: '#d1', offset: 0, callback: function(el) {
-    Materialize.fadeInImage($(el));
-  }},
-  {selector: '#d2', offset: 0, callback: function(el) {
-    Materialize.fadeInImage($(el));
-  }}
+// var options = [
+//   {selector: '#intro', offset: 0, callback: function(el) {
+//     Materialize.fadeInImage($(el));
+//   } },
+//   {selector: '#about', offset: 0, callback: function(el) {
+//     Materialize.fadeInImage($(el));
+//   }},
+//   {selector: '#portfolio', offset: 0, callback: function(el) {
+//     Materialize.fadeInImage($(el));
+//     $("#bar1").addClass(".bar1");
+//   }},
+//   {selector: '#d1', offset: 0, callback: function(el) {
+//     Materialize.fadeInImage($(el));
+//   }},
+//   {selector: '#d2', offset: 0, callback: function(el) {
+//     Materialize.fadeInImage($(el));
+//   }}
   // {selector: '#pic', offset: 250, callback: function(el) {
   //   Materialize.showStaggeredList($(el));
   // }},
   // {selector: '#test', offset: 150, callback: function(el) {
   //   Materialize.showStaggeredList($(el));
   // }}
-];
-Materialize.scrollFire(options);
+// ];
+// Materialize.scrollFire(options);
 
 
 // Click anywhere on the terminal window and it will focus to the text box so that you can type commands

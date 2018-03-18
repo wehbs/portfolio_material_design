@@ -25,8 +25,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Shamir's Portfolio</title>
-  <!-- Normalize CSS -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"> -->
 
   <!-- Materialize CSS Library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -34,15 +32,30 @@
 
   <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-  <!-- <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet"> -->
 
-  <!-- CSS -->
+  <!-- Animate.CSS -->
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <!-- Imagehover.CSS -->
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/1.0/css/imagehover.min.css">  
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/portfolio.css">
-  <!-- <link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css"> -->
+  
+  <!-- Scripts -->
+  <!-- Added link to firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
 
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Materialize JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <!-- AniView for Animate.CSS -->
+  <script src="https://unpkg.com/jquery-aniview/dist/jquery.aniview.js"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="js/portfolio.js"></script>
 </head>
 
 <body>
@@ -52,7 +65,7 @@
     <nav class="white">
       <div class="nav-wrapper container">
         <a href="#" class="brand-logo">
-          <i class="fas fa-code grey-text text-darken-1"></i>
+          <i class="fas fa-code light-green-text"></i>
         </a>
         <a href="#" data-activates="mobile-screen" class="button-collapse">
           <i class="material-icons grey-text text-darken-1">menu</i>
@@ -92,32 +105,33 @@
   <!-- Intro Header -->
   <div class="row container center-align section">
     <div class="col s12" id="intro">
-      <h1 class="white-text">Shamir Wehbe</h1>
-      <p class="flow-text white-text">Full Stack Web Developer</p>
+      <h1 class="white-text aniview fast" data-av-animation="fadeInUp">Shamir Wehbe</h1>
+      <p class="flow-text white-text aniview slow" data-av-animation="fadeInUp">Full Stack Web Developer</p>
     </div>
   </div>
 
+
+
+
+
   <!-- Light grey line to divide content -->
-  <div class="divider container" id="d1"></div>
+  <div class="divider container aniview fast" data-av-animation="fadeIn" id="d1"></div>
+  
 
 
   <!-- About Section -->
   <div class="row container section valign-wrapper" id="about">
 
     <!-- Photo large screen-->
-    <div class="col s12 m4 center-align hide-on-small-only">
-      <img src="img/about-shamir-sp-sidelook.png" style="max-width:60%;min-width:60%;">
+    <div class="col s12 m4 center-align">
+      <img src="img/about-shamir-sp.png" style="max-width:60%;min-width:60%;" class="aniview fast" data-av-animation="slideInLeft">
     </div>
 
-    <!-- Photo small screen-->
-    <div class="col s12 m4 center-align show-on-small hide-on-med-and-up">
-      <img src="img/about-shamir-sp-downlook.png" style="max-width:60%;min-width:60%;">
-    </div>
 
     <!-- About description -->
     <div class="col s12 m8">
-      <h2 class="grey-text text-darken-1 center-align">About</h2>
-      <p class="grey-text text-darken-1 flow-text about-text">
+      <h2 class="grey-text text-darken-1 center-align aniview fast" data-av-animation="fadeInUp">About</h2>
+      <p class="grey-text text-darken-1 flow-text about-text aniview slow" data-av-animation="fadeInUp">
         Web developer able to build a sophisticated website with full database backend all the way from mockup to rollout. Detailed
         oriented, focused, autodidactic, excellent interpersonal and communication skills with a passion for providing the
         right solutions to clients. The ability to solve problems using logical reasoning and creativity. Proven ability
@@ -128,60 +142,95 @@
   </div>
 
 
+
+
   <!-- Light grey line to divide content -->
-  <div class="divider container" id="d2"></div>
+  <div class="divider container aniview fast" data-av-animation="fadeIn" id="d2"></div>
+
+
+
 
 
   <!-- Portfolio Section -->
   <div class="row container section" id="portfolio">
-    <h2 class="grey-text text-darken-1 center-align">Portfolio</h2>
+    <h2 class="grey-text text-darken-1 center-align aniview fast" data-av-animation="fadeInUp">Portfolio</h2>
 
     <!-- Card 1 -->
-    <div class="col s6 m4">
+    <!-- <div class="col s6 m4">
       <div class="card blue accent-2 hoverable">
         <div class="card-content white-text">
-          <span class="card-title">Card Title</span>
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little
-            markup to use effectively.</p>
+          <span class="card-title aniview fast flow-text" data-av-animation="fadeInUp">NYT React</span>
+          <p class="aniview slow" data-av-animation="fadeInUp">Web app that uses the complete MERN stack. Allows you to search New York Times articles between a specific year range and save/delete those articles to a Mongo database.</p>
         </div>
         <div class="card-action">
           <a href="#">Demo</a>
           <a href="#">GitHub</a>
         </div>
       </div>
-    </div>
+    </div> -->
+
+    
+        <div class="col s6 m4">
+            <figure class="imghvr-push-up center-align">
+                <img src="img/keyboard.png">
+                <figcaption>
+                  Test
+                </figcaption>
+                <a href="#"></a>
+              </figure>
+        </div>
 
 
 
-<div class="col s6 m4">
 
-    <div class="graph-cont">
-        <div class="bar bar1"><i class="fab fa-html5"></i> HTML5</div>
-        <div class="bar bar2"><i class="fab fa-css3-alt"></i> CSS3</div>
-        <div class="bar bar3"><i class="fab fa-js"></i> JavaScript</div>               
-    </div>
-
-</div>
 
 
     <!-- Card 2 -->
     <div class="col s6 m4">
-      <div class="card light-green hoverable">
-        <div class="card-content white-text">
-          <span class="card-title">Card Title</span>
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little
-            markup to use effectively.</p>
+        <div class="card-panel blue accent-2 white-text">
+            <span class="card-title aniview fast flow-text" data-av-animation="fadeInUp">NYT React</span>
+            <span class="card-title aniview slow" data-av-animation="fadeInUp">Web app that uses the complete MERN stack. Allows you to search New York Times articles between a specific year range and save/delete those articles to a Mongo database.</span>
         </div>
-        <div class="card-action">
-          <a href="#" class="black-text">Demo</a>
-          <a href="#">GitHub</a>
-        </div>
-      </div>
     </div>
 
 
 
+
+
+
+
+    
+
+    <!-- Card 3 -->
+    <div class="col s6 m4">
+        <div class="card-panel blue accent-2 white-text">
+            <span class="card-title aniview fast flow-text" data-av-animation="fadeInUp">NYT React</span>
+            <span class="card-title aniview slow" data-av-animation="fadeInUp">Web app that uses the complete MERN stack. Allows you to search New York Times articles between a specific year range and save/delete those articles to a Mongo database.</span>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+<!-- Skills chart -->
+<!-- <div class="col s6 m4">
+
+    <div class="graph-cont">
+        <div class="bar bar1 z-depth-3" id="bar1"><i class="fab fa-html5"></i> HTML5</div>
+        <div class="bar bar2 z-depth-3"><i class="fab fa-css3-alt"></i> CSS3</div>
+        <div class="bar bar3 z-depth-3"><i class="fab fa-js"></i> JavaScript</div>               
+    </div>
+
+</div> -->
+
+    
+
   </div>
+
 
 
 
@@ -215,17 +264,7 @@
 
 
 
-  <!-- Added link to firebase -->
-  <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
 
-  <!-- Added link to the jQuery Library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!-- Materialize JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-
-  <!-- Custom JavaScript -->
-  <script src="js/portfolio.js"></script>
 
 
 </body>
