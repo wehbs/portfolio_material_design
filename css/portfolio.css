@@ -2,11 +2,14 @@
 .container {
   width: 95%;
 }
+
 /* Shamir Wehbe header */
+
 h1 {
   font-weight: 600;
   font-size: 100px;
 }
+
 @media (max-width: 600px) {
   h1 {
     font-size: 50px;
@@ -15,35 +18,39 @@ h1 {
 
 h2 {
   font-weight: 600;
-  font-size: 50px;
+  font-size: 36px;
+}
+
+p {
+  font-weight: 400;
 }
 
 /* Full Stack Web Developer font */
+
 p.white-text {
   font-family: "Source Code Pro", monospace;
   font-size: 21px;
 }
+
 /* Background for header */
+
 #intro {
   background: url(../img/atom-bg.jpg) no-repeat bottom center scroll;
   background-size: cover;
   padding: 50px;
 }
+
 /* Change materialize default color for links */
+
 nav ul li a:hover {
   background-color: white;
 }
-/* Makes the fade in effect work properly */
-/* .divider, #intro, #about, #portfolio {
-    opacity: 0;
-} */
 
-/* #about, #portfolio {
-    padding-top: 100px;
-} */
 /* Blue hover color for navbar links */
-.fa-2x:hover {
+
+.blue-hover:hover {
   color: #448aff;
+  transition: color 128ms ease-in;
 }
 
 /* .section {
@@ -53,6 +60,8 @@ nav ul li a:hover {
 .about-text {
   font-weight: 400;
 }
+
+/* Skill bars */
 
 .bar {
   height: 30px;
@@ -64,6 +73,7 @@ nav ul li a:hover {
   padding: 0 0 0 10px;
   position: relative;
 }
+
 .bar::before {
   content: "";
   width: 100%;
@@ -74,6 +84,7 @@ nav ul li a:hover {
   z-index: -2;
   background: #ecf0f1;
 }
+
 .bar::after {
   content: "";
   height: 30px;
@@ -112,34 +123,178 @@ nav ul li a:hover {
 }
 
 /* Control speed of animations to use with AniView */
+
 .fast {
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: 0s;
 }
+
 .slow {
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: .5s;
 }
+
 .reallyslow {
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: 1s;
 }
 
-/* Card size */
-.card-panel {
-    height: 226px;
-    width: 100%;
+
+/* Portfolio squares sizing */
+
+
+.center-port {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Custom made button */
+
+.button {
+  display: inline-block;
+  padding: 4px 12px;
+  text-decoration: none;
+  color: #448aff;
+  border-color: #448aff;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+/* Sweep To Top */
+
+.hvr-sweep-to-top {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.hvr-sweep-to-top:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #448aff;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-sweep-to-top:hover,
+.hvr-sweep-to-top:focus,
+.hvr-sweep-to-top:active {
+  color: white;
+}
+
+.hvr-sweep-to-top:hover:before,
+.hvr-sweep-to-top:focus:before,
+.hvr-sweep-to-top:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+/* Underline From Left */
+.hvr-underline-from-left {
+  color: #448aff;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #448aff;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+/* Underline From Right */
+.hvr-underline-from-right {
+  color: #448aff;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 100%;
+  right: 0;
+  bottom: 0;
+  background: #448aff;
+  height: 4px;
+  -webkit-transition-property: left;
+  transition-property: left;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-right:hover:before, .hvr-underline-from-right:focus:before, .hvr-underline-from-right:active:before {
+  left: 0;
+}
+
+/* Proper sizing for portfolio boxes */
+.card {
+  margin: 0;
+  height: 300px;
+  width: 400px;
+  color: #757575;
+  position: relative;
 }
 
 @media (max-width: 600px) {
-    .card-panel {
-        height: 117px;
-        width: 100%;
-    }
+  .card {
+    height: 200px;
+    width: 300%;
   }
+}
 
- .imghvr-push-up {
-    height: 226px;
-    width: 100%;
-    background-color: white;
- }
+.card .card-content {
+  padding: 0;
+}
+
+.card-content>* {
+  margin: 15px;
+}
