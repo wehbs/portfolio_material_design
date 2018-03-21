@@ -180,8 +180,8 @@ nav ul li a:hover {
   display: inline-block;
   padding: 4px 12px;
   text-decoration: none;
-  color: #448aff;
-  border-color: #448aff;
+  color: #28b6d7;
+  border-color: rgba(54, 199, 235, 1);
   border-width: 2px;
   border-style: solid;
   border-radius: 5px;
@@ -210,7 +210,7 @@ nav ul li a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #448aff;
+  background: rgba(54, 199, 235, 1);
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 100%;
@@ -238,7 +238,7 @@ nav ul li a:hover {
 
 /* Underline From Left */
 .hvr-underline-from-left {
-  color: #448aff;
+  color: rgba(54, 199, 235, 1);
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -254,7 +254,7 @@ nav ul li a:hover {
   left: 0;
   right: 100%;
   bottom: 0;
-  background: #448aff;
+  background: #8bc34a;
   height: 4px;
   -webkit-transition-property: right;
   transition-property: right;
@@ -269,7 +269,7 @@ nav ul li a:hover {
 
 /* Underline From Center */
 .hvr-underline-from-center {
-  color: #448aff;  
+  color: #8bc34a;  
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -285,7 +285,7 @@ nav ul li a:hover {
   left: 50%;
   right: 50%;
   bottom: 0;
-  background: #448aff;
+  background: rgba(54, 199, 235, 1);
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -301,7 +301,7 @@ nav ul li a:hover {
 
 /* Underline From Right */
 .hvr-underline-from-right {
-  color: #448aff;
+  color: #8bc34a;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -317,7 +317,7 @@ nav ul li a:hover {
   left: 100%;
   right: 0;
   bottom: 0;
-  background: #448aff;
+  background: rgba(54, 199, 235, 1);
   height: 4px;
   -webkit-transition-property: left;
   transition-property: left;
