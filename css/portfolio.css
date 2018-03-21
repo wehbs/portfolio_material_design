@@ -17,12 +17,13 @@ h1 {
 }
 
 h2 {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 36px;
 }
 
 p {
-  font-weight: 400;
+  font-weight: 300;
+  color: #9e9e9e !important;
 }
 
 /* Full Stack Web Developer font */
@@ -41,13 +42,11 @@ p.white-text {
 }
 
 /* Change materialize default color for links */
-
 nav ul li a:hover {
   background-color: white;
 }
 
 /* Blue hover color for navbar links */
-
 .blue-hover:hover {
   color: #448aff;
   transition: color 128ms ease-in;
@@ -57,9 +56,9 @@ nav ul li a:hover {
     margin-bottom: 10%;
 } */
 
-.about-text {
-  font-weight: 400;
-}
+/* .about-text {
+  font-weight: 300;
+} */
 
 /* Skill bars */
 
@@ -109,17 +108,42 @@ nav ul li a:hover {
 
 .bar1::after {
   max-width: 90%;
-  background: #ff9e80;
+  background: #9e9e9e;
 }
 
 .bar2::after {
   max-width: 60%;
-  background: #e91e63;
+  background: #9e9e9e;  
 }
 
 .bar3::after {
   max-width: 70%;
-  background: #ab47bc;
+  background: #9e9e9e;
+}
+
+.bar4::after {
+  max-width: 50%;
+  background: #9e9e9e;
+}
+
+.bar5::after {
+  max-width: 60%;
+  background: #9e9e9e;
+}
+
+.bar6::after {
+  max-width: 67%;
+  background: #9e9e9e;
+}
+
+.bar7::after {
+  max-width: 70%;
+  background: #9e9e9e;
+}
+
+.bar8::after {
+  max-width: 58%;
+  background: #9e9e9e;
 }
 
 /* Control speed of animations to use with AniView */
@@ -141,7 +165,6 @@ nav ul li a:hover {
 
 
 /* Portfolio squares sizing */
-
 
 .center-port {
   position: absolute;
@@ -305,6 +328,21 @@ nav ul li a:hover {
 }
 .hvr-underline-from-right:hover:before, .hvr-underline-from-right:focus:before, .hvr-underline-from-right:active:before {
   left: 0;
+}
+
+
+.about-pic-box {
+  margin: 0;
+  height: 400px;
+  width: 400px;
+  position: relative;
+}
+
+.about-text-box {
+  margin: 0;
+  height: 400px;
+  width: 800px;
+  position: relative;
 }
 
 /* Proper sizing for portfolio boxes */
