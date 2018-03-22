@@ -120,17 +120,17 @@ nav ul li a:hover {
 
 .bar2::after {
   max-width: 60%;
-  background: rgba(214, 191, 48, 1);
+  background: rgba(54, 199, 235, 1);
 }
 
 .bar3::after {
   max-width: 70%;
-  background: rgba(214, 191, 48, 1);
+  background: #8bc34a;
 }
 
 .bar4::after {
   max-width: 50%;
-  background: rgba(214, 191, 48, 1);
+  background: #757575;  
 }
 
 .bar5::after {
@@ -140,17 +140,17 @@ nav ul li a:hover {
 
 .bar6::after {
   max-width: 67%;
-  background: rgba(214, 191, 48, 1);
+  background: rgba(54, 199, 235, 1);
 }
 
 .bar7::after {
   max-width: 70%;
-  background: rgba(214, 191, 48, 1);
+  background: #8bc34a;
 }
 
 .bar8::after {
   max-width: 58%;
-  background: rgba(214, 191, 48, 1);
+  background: #757575;
 }
 
 /* Control speed of animations to use with AniView */

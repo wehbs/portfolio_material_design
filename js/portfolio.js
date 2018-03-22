@@ -64,28 +64,30 @@ $(function() {
   // =================================================
 
 
-
-  $('.b1').whenInViewport(function() {
-    $('.b1').addClass('bar1');
+  // Add Classes when elements enter the viewport
+  $(".b1").whenInViewport(function() {
+    $(".b1").addClass("bar1");
   });
-  $('.b2').whenInViewport(function() {
-    $('.b2').addClass('bar2');
+  $(".b2").whenInViewport(function() {
+    $(".b2").addClass("bar2");
   });
-  $('.b3').whenInViewport(function() {
-    $('.b3').addClass('bar3');
+  $(".b3").whenInViewport(function() {
+    $(".b3").addClass("bar3");
   });
-  $('.b4').whenInViewport(function() {
-    $('.b4').addClass('bar4');
+  $(".b4").whenInViewport(function() {
+    $(".b4").addClass("bar4");
   });
-  $('.b5').whenInViewport(function() {
-    $('.b5').addClass('bar5');
+  $(".b5").whenInViewport(function() {
+    $(".b5").addClass("bar5");
   });
-  $('.b6').whenInViewport(function() {
-    $('.b6').addClass('bar6');
-  });$('.b7').whenInViewport(function() {
-    $('.b7').addClass('bar7');
-  });$('.b8').whenInViewport(function() {
-    $('.b8').addClass('bar8');
+  $(".b6").whenInViewport(function() {
+    $(".b6").addClass("bar6");
+  });
+  $(".b7").whenInViewport(function() {
+    $(".b7").addClass("bar7");
+  });
+  $(".b8").whenInViewport(function() {
+    $(".b8").addClass("bar8");
   });
 
   // Click anywhere on the terminal window and it will focus to the text box so that you can type commands
