@@ -48,7 +48,7 @@ nav ul li a:hover {
 
 /* Blue hover color for navbar links */
 .blue-hover:hover {
-  color: #448aff;
+  color: #4285f4;
   transition: color 128ms ease-in;
 }
 
@@ -84,7 +84,14 @@ nav ul li a:hover {
   background: #ecf0f1;
 }
 
-.bar::after {
+.bar1::after,
+.bar2::after,
+.bar3::after,
+.bar4::after,
+.bar5::after,
+.bar6::after,
+.bar7::after,
+.bar8::after {
   content: "";
   height: 30px;
   transition: 0.7s;
@@ -108,42 +115,42 @@ nav ul li a:hover {
 
 .bar1::after {
   max-width: 90%;
-  background: #9e9e9e;
+  background: rgba(214, 191, 48, 1);
 }
 
 .bar2::after {
   max-width: 60%;
-  background: #9e9e9e;  
+  background: rgba(214, 191, 48, 1);
 }
 
 .bar3::after {
   max-width: 70%;
-  background: #9e9e9e;
+  background: rgba(214, 191, 48, 1);
 }
 
 .bar4::after {
   max-width: 50%;
-  background: #9e9e9e;
+  background: rgba(214, 191, 48, 1);
 }
 
 .bar5::after {
   max-width: 60%;
-  background: #9e9e9e;
+  background: rgba(214, 191, 48, 1);
 }
 
 .bar6::after {
   max-width: 67%;
-  background: #9e9e9e;
+  background: rgba(214, 191, 48, 1);
 }
 
 .bar7::after {
   max-width: 70%;
-  background: #9e9e9e;
+  background: rgba(214, 191, 48, 1);
 }
 
 .bar8::after {
   max-width: 58%;
-  background: #9e9e9e;
+  background: rgba(214, 191, 48, 1);
 }
 
 /* Control speed of animations to use with AniView */
@@ -155,14 +162,13 @@ nav ul li a:hover {
 
 .slow {
   -webkit-animation-duration: 1s;
-  -webkit-animation-delay: .5s;
+  -webkit-animation-delay: 0.5s;
 }
 
 .reallyslow {
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: 1s;
 }
-
 
 /* Portfolio squares sizing */
 
@@ -263,13 +269,15 @@ nav ul li a:hover {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
   right: 0;
 }
 
 /* Underline From Center */
 .hvr-underline-from-center {
-  color: #8bc34a;  
+  color: #8bc34a;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -294,7 +302,9 @@ nav ul li a:hover {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
   left: 0;
   right: 0;
 }
@@ -326,10 +336,11 @@ nav ul li a:hover {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-underline-from-right:hover:before, .hvr-underline-from-right:focus:before, .hvr-underline-from-right:active:before {
+.hvr-underline-from-right:hover:before,
+.hvr-underline-from-right:focus:before,
+.hvr-underline-from-right:active:before {
   left: 0;
 }
-
 
 .about-pic-box {
   margin: 0;
@@ -365,6 +376,6 @@ nav ul li a:hover {
   padding: 0;
 }
 
-.card-content>* {
+.card-content > * {
   margin: 15px;
 }
