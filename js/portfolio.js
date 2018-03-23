@@ -63,7 +63,6 @@ $(function() {
   $(window).resize(checkWidth);
   // =================================================
 
-
   // Add Classes when elements enter the viewport
   $(".b1").whenInViewport(function() {
     $(".b1").addClass("bar1");
@@ -88,6 +87,30 @@ $(function() {
   });
   $(".b8").whenInViewport(function() {
     $(".b8").addClass("bar8");
+  });
+
+  
+
+
+  $("#contactForm").submit(function(event) {
+    event.preventDefault();
+    $.ajax({
+      url: "https://www.enformed.io/5xj2jsur",
+      method: "post",
+      dataType: "json",
+      accepts: "application/json",
+      data: $("#contactForm").serialize(),
+      success: function() {
+        console.log("Your form was successfully received!");
+        Materialize.toast("Thanks for reaching out!", 4000);
+        $("textarea").val("");
+        $("input").val("");
+      },
+      error: function() {
+        console.log("Failure. Try again.");
+        // Show an error message here...
+      }
+    });
   });
 
   // Click anywhere on the terminal window and it will focus to the text box so that you can type commands
