@@ -54,11 +54,11 @@ $(function() {
     if ($(window).width() < 600) {
       $("#about").removeClass("valign-wrapper");
       $("#skills").removeClass("valign-wrapper");
-      $("#contact").removeClass("valign-wrapper");      
+      $("#contact").removeClass("valign-wrapper");
     } else {
       $("#about").addClass("valign-wrapper");
       $("#skills").addClass("valign-wrapper");
-      $("#contact").addClass("valign-wrapper");      
+      $("#contact").addClass("valign-wrapper");
     }
   }
   checkWidth();
@@ -66,6 +66,7 @@ $(function() {
   // =================================================
 
   // Add Classes when elements enter the viewport
+  // Skill Bars
   $(".b1").whenInViewport(function() {
     $(".b1").addClass("bar1");
   });
@@ -91,9 +92,51 @@ $(function() {
     $(".b8").addClass("bar8");
   });
 
-  
+  // Add Animate.CSS classes when elements enter the viewport
+  $("#1").whenInViewport(function() {
+    $("#1").addClass("animated fadeInUp");
+  });
+  $("#2").whenInViewport(function() {
+    $("#2").addClass("animated fadeInUp");
+  });
+  $("#3").whenInViewport(function() {
+    $("#3").addClass("animated fadeInUp");
+  });
+  $("#4").whenInViewport(function() {
+    $("#4").addClass("animated fadeIn");
+  });
+  $("#5").whenInViewport(function() {
+    $("#5").addClass("animated fadeInUp");
+  });
+  $("#6").whenInViewport(function() {
+    $("#6").addClass("animated fadeInUp");
+  });
+  $("#7").whenInViewport(function() {
+    $("#7").addClass("animated fadeInUp");
+  });
+  $("#8").whenInViewport(function() {
+    $("#8").addClass("animated fadeInUp");
+  });
+  $("#9").whenInViewport(function() {
+    $("#9").addClass("animated fadeInUp");
+  });
+  $("#10").whenInViewport(function() {
+    $("#10").addClass("animated fadeInUp");
+  });
+  $("#11").whenInViewport(function() {
+    $("#11").addClass("animated fadeInUp");
+  });
+  $("#12").whenInViewport(function() {
+    $("#12").addClass("animated fadeInUp");
+  });
+  $("#13").whenInViewport(function() {
+    $("#13").addClass("animated fadeInUp");
+  });
+  $("#14").whenInViewport(function() {
+    $("#14").addClass("animated fadeInUp");
+  });
 
-
+  // Contact Form
   $("#contactForm").submit(function(event) {
     event.preventDefault();
     $.ajax({
@@ -116,8 +159,6 @@ $(function() {
       }
     });
   });
-
-
 
   // Click anywhere on the terminal window and it will focus to the text box so that you can type commands
   // $(".shell-wrap").click(function () {
