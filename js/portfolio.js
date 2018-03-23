@@ -54,9 +54,11 @@ $(function() {
     if ($(window).width() < 600) {
       $("#about").removeClass("valign-wrapper");
       $("#skills").removeClass("valign-wrapper");
+      $("#contact").removeClass("valign-wrapper");      
     } else {
       $("#about").addClass("valign-wrapper");
       $("#skills").addClass("valign-wrapper");
+      $("#contact").addClass("valign-wrapper");      
     }
   }
   checkWidth();
@@ -108,10 +110,14 @@ $(function() {
       },
       error: function() {
         console.log("Failure. Try again.");
-        // Show an error message here...
+        Materialize.toast("Thanks for reaching out!", 4000);
+        $("textarea").val("");
+        $("input").val("");
       }
     });
   });
+
+
 
   // Click anywhere on the terminal window and it will focus to the text box so that you can type commands
   // $(".shell-wrap").click(function () {

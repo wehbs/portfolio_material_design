@@ -56,9 +56,10 @@ nav ul li a:hover {
     margin-bottom: 10%;
 } */
 
-/* .about-text {
-  font-weight: 300;
-} */
+.divider {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
 
 /* Skill bars */
 
@@ -410,4 +411,17 @@ nav ul li a:hover {
 .input-field input[type=email].invalid {
   border-bottom: 1px solid red !important;
   box-shadow: 0 1px 0 0 red !important;
+}
+
+/* Custom CSS to change materializeCSS Toast */
+#toast-container {
+  min-width: 100% !important;
+  bottom: 0% !important;
+  top: auto !important;
+  right: auto !important;
+  left: 0% !important;
+}
+.toast {
+  background-color: #8bc34a !important;
+  
 }
