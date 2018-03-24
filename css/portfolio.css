@@ -441,28 +441,14 @@ textarea {
   background-color: #28b6d7 !important;
 }
 
+/* Footer CSS */
 .foot-container {
   background: url(../img/footer-shamir-sp.png) no-repeat center;
   background-size: cover;
   height: 600px;
   position: relative;
 }
-
-.foot-img {
-  bottom: 0px;
-}
-/* Bottom left text */
-.bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-}
-
-/* Top left text */
-.top-left {
-  /* position: absolute;
-  top: 160px;
-  left: 230px; */
+.footer {
   color: white !important;
   font-size: 90px;
   font-weight: 800;

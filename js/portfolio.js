@@ -25,13 +25,6 @@ $(function() {
   //     database.ref().push(ipValues);
   //   });
 
-  // AniView for AnimationEvent.CSS
-  var options = {
-    animateThreshold: 1,
-    scrollPollInterval: 20
-  };
-  $(".aniview").AniView(options);
-
   // jQuery to collapse the navbar shadow on scroll
   // =================================================
   function removeNavShadow() {
