@@ -135,6 +135,9 @@ $(function() {
   $("#14").whenInViewport(function() {
     $("#14").addClass("animated fadeInUp");
   });
+  $("#15").whenInViewport(function() {
+    $("#15").addClass("animated fadeInUp");
+  });
 
   // Contact Form
   $("#contactForm").submit(function(event) {
