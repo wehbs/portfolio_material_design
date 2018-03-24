@@ -4,7 +4,7 @@
 <head>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108394743-1"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108394743-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -14,7 +14,7 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-108394743-1');
-  </script> -->
+  </script>
 
   <meta property="og:title" content="Shamir's Portfolio" />
   <meta property="og:type" content="website" />
@@ -30,44 +30,20 @@
   <!-- Materialize CSS Library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-
   <!-- Animate.CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-
-  <!-- Imagehover.CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/1.0/css/imagehover.min.css">
-
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/portfolio.css">
-
-  <!-- Scripts -->
-  <!-- Added link to firebase -->
-  <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
-
-  <!-- Added link to the jQuery Library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!-- Materialize JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-
-  <!-- whenInViewport.js -->
-  <script src="js/whenInViewport.js"></script>
-
-  <!-- Custom JavaScript -->
-  <script src="js/portfolio.js"></script>
 </head>
 
-<body>
+<body id="page-top">
 
   <!-- Navbar -->
   <div class="navbar-fixed">
     <nav class="white">
       <div class="nav-wrapper container">
-        <a href="#" class="brand-logo left">
-          <i class="fas fa-code light-green-text"></i>
+        <a href="#!" class="brand-logo left">
+          <i class="fas fa-terminal light-green-text animated tada infinite"></i>
         </a>
         <ul id="nav-mobile" class="right">
           <li>
@@ -99,10 +75,10 @@
     </div>
   </div>
   <!-- End Intro Header -->
-  <div class="divider container"></div>
+  <div class="divider container" id="about"></div>
 
   <!-- About Section -->
-  <div class="row container section" id="about">
+  <div class="row container section">
     <!-- About Photo -->
     <div class="col s12 m4 center-align">
       <img src="img/about-shamir-sp.png" style="max-width:230px;">
@@ -120,7 +96,7 @@
   </div>
   <!-- End About Section -->
 
-  <div class="divider container"></div>
+  <div class="divider container" id="portfolio"></div>
 
   <!-- Portfolio Section -->
   <div class="row container section">
@@ -162,7 +138,7 @@
     <!-- Card 3 -->
     <div class="col s12 m6 l4 card z-depth-0">
       <div class="card-content center-port">
-        <i class="fab fa-css3 fa-3x"></i>
+        <i class="fas fa-code fa-3x"></i>
         <p>Moody</p>
         <a href="#!" class="button hvr-sweep-to-top activator" id="8">Info</a>
       </div>
@@ -171,7 +147,7 @@
           <i class="material-icons right">close</i>
         </span>
         <p>Web app that allows you to upload a photo of yourself, determines if you’re happy or sad, asks how it can help and
-          then logs useful suggestions on to a map.</p>
+          then logs useful suggestions on to a map. Currently only works in Google Chrome.</p>
         <p>Skill Highlight: Google APIs</p>
         <a target="_blank" href="https://moodyproject-1506187357344.firebaseapp.com" class="hvr-underline-from-left">Website</a> |
         <a target="_blank" href="https://github.com/wehbs/MoodyProject" class="hvr-underline-from-right">Code</a>
@@ -180,18 +156,21 @@
     <!-- Card 4 -->
     <div class="col s12 m6 l4 card z-depth-0">
       <div class="card-content center-port">
-        <i class="fab fa-html5 fa-3x"></i>
-        <p>Think Different Trivia</p>
+        <i class="fab fa-js fa-3x"></i>
+        <p>Friend Finder</p>
         <a href="#!" class="button hvr-sweep-to-top activator" id="9">Info</a>
       </div>
       <div class="card-reveal">
-        <span class="card-title grey-text text-darken-1">Think Different Trivia
+        <span class="card-title grey-text text-darken-1">Friend Finder
           <i class="material-icons right">close</i>
         </span>
-        <p>Trivia game that is based on Apple Inc. facts.</p>
-        <p>Skill Highlight: JavaScript</p>
-        <a target="_blank" href="https://htmlpreview.github.io/?https://github.com/wehbs/triviagame/blob/master/index.html" class="hvr-underline-from-left">Website</a> |
-        <a target="_blank" href="https://github.com/wehbs/TriviaGame" class="hvr-underline-from-right">Code</a>
+        <p>A compatibility-based web app, basically a dating app. This full-stack site will take in results from user's surveys,
+          then compare their answers with those from other users. The app will then display the name and picture of the user
+          with the best overall match.
+        </p>
+        <p>Skill Highlight: Express.js</p>
+        <a target="_blank" href="https://sheltered-ravine-58676.herokuapp.com" class="hvr-underline-from-left">Website</a> |
+        <a target="_blank" href="https://github.com/wehbs/FriendFinder" class="hvr-underline-from-right">Code</a>
       </div>
     </div>
     <!-- Card 5 -->
@@ -213,7 +192,7 @@
     <!-- Card 6 -->
     <div class="col s12 m6 l4 card z-depth-0">
       <div class="card-content center-port">
-        <i class="fab fa-js fa-3x"></i>
+        <i class="fab fa-bitcoin fa-3x"></i>
         <p>Crypto Hangman</p>
         <a href="#!" class="button hvr-sweep-to-top activator" id="11">Info</a>
       </div>
@@ -227,34 +206,127 @@
         <a target="_blank" href="https://github.com/wehbs/Hangman-Game" class="hvr-underline-from-right">Code</a>
       </div>
     </div>
+    <!-- Card 7 -->
+    <div class="col s12 m6 l4 card z-depth-0">
+      <div class="card-content center-port">
+        <i class="fab fa-node-js fa-3x"></i>
+        <p>Animal Hangman</p>
+        <a href="#!" class="button hvr-sweep-to-top activator" id="12">Info</a>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-1">Animal Hangman
+          <i class="material-icons right">close</i>
+        </span>
+        <p>Animal themed hangman game built on Node.js that is playable in the command line.</p>
+        <p>Skill Highlight: Node.js</p>
+        <a target="_blank" href="https://github.com/wehbs/Hangman-Cli" class="hvr-underline-from-center">Code</a>
+      </div>
+    </div>
+    <!-- Card 7 -->
+    <div class="col s12 m6 l4 card z-depth-0">
+      <div class="card-content center-port">
+        <i class="fas fa-train fa-3x"></i>
+        <p>Train Scheduler</p>
+        <a href="#!" class="button hvr-sweep-to-top activator" id="13">Info</a>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-1">Train Scheduler
+          <i class="material-icons right">close</i>
+        </span>
+        <p>Web app thats allows you to add train names, destinations, time of departure and frequency to a NoSQL database which
+          then dynamically fills a client side table.</p>
+        <p>Skill Highlight: Firebase</p>
+        <a target="_blank" href="https://htmlpreview.github.io/?https://github.com/wehbs/trainschedule/blob/master/index.html" class="hvr-underline-from-left">Website</a> |
+        <a target="_blank" href="https://github.com/wehbs/TrainSchedule" class="hvr-underline-from-right">Code</a>
+      </div>
+    </div>
+    <!-- Card 8 -->
+    <div class="col s12 m6 l4 card z-depth-0">
+      <div class="card-content center-port">
+        <i class="fab fa-css3 fa-3x"></i>
+        <p>Crystal Collector</p>
+        <a href="#!" class="button hvr-sweep-to-top activator" id="14">Info</a>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-1">Crystal Collector
+          <i class="material-icons right">close</i>
+        </span>
+        <p>Web browser game that generates a random number which one has to add up to by clicking on four different crystals
+          all of which themselves have new random values at the beginning of each game cycle.</p>
+        <p>Skill Highlight: JavaScript</p>
+        <a target="_blank" href="https://htmlpreview.github.io/?https://github.com/wehbs/week-4-game/blob/master/index.html" class="hvr-underline-from-left">Website</a> |
+        <a target="_blank" href="https://github.com/wehbs/Week-4-Game" class="hvr-underline-from-right">Code</a>
+      </div>
+    </div>
+    <!-- Card 9 -->
+    <div class="col s12 m6 l4 card z-depth-0">
+      <div class="card-content center-port">
+        <i class="fab fa-html5 fa-3x"></i>
+        <p>Giphy Food Buttons</p>
+        <a href="#!" class="button hvr-sweep-to-top activator" id="15">Info</a>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-1">Giphy Food Buttons
+          <i class="material-icons right">close</i>
+        </span>
+        <p>Web app that creates new search term buttons based on user input and then queries the giphy API and display gif's
+          which move when you click on them.</p>
+        <p>Skill Highlight: Giphy API</p>
+        <a target="_blank" href="https://htmlpreview.github.io/?https://github.com/wehbs/giphy-api/blob/master/index.html" class="hvr-underline-from-left">Website</a> |
+        <a target="_blank" href="https://github.com/wehbs/Giphy-API" class="hvr-underline-from-right">Code</a>
+      </div>
+    </div>
+    <!-- Card 10 -->
+    <div class="col s12 m6 l4 card z-depth-0">
+      <div class="card-content center-port">
+        <i class="fab fa-apple fa-3x"></i>
+        <p>Think Different Trivia</p>
+        <a href="#!" class="button hvr-sweep-to-top activator" id="16">Info</a>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-1">Think Different Trivia
+          <i class="material-icons right">close</i>
+        </span>
+        <p>Trivia game that is based on Apple Inc. facts.</p>
+        <p>Skill Highlight: JavaScript</p>
+        <a target="_blank" href="https://htmlpreview.github.io/?https://github.com/wehbs/triviagame/blob/master/index.html" class="hvr-underline-from-left">Website</a> |
+        <a target="_blank" href="https://github.com/wehbs/TriviaGame" class="hvr-underline-from-right">Code</a>
+      </div>
+    </div>
+    <!-- Card 11 -->
+    <div class="col s12 m6 l4 card z-depth-0">
+      <div class="card-content center-port">
+        <i class="far fa-folder fa-3x"></i>
+        <p>Wehbsite</p>
+        <a href="#!" class="button hvr-sweep-to-top activator" id="17">Info</a>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-1">Wehbsite
+          <i class="material-icons right">close</i>
+        </span>
+        <p>My personal portfolio page. Made with Materialize.CSS, Font Awesome, Hover.CSS, Animate.CSS, Enformed.io and whenInViewport.js.</p>
+        <p>Skill Highlight: Design</p>
+        <a target="_blank" href="https://github.com/wehbs/portfolio_material_design" class="hvr-underline-from-center">Code</a>
+      </div>
+    </div>
   </div>
   <!-- End Portfolio Section -->
 
-
-  <div class="divider container"></div>
-
-
-
+  <div class="divider container" id="skills"></div>
 
   <!-- Skills Section -->
-  <div class="row container section" id="skills">
-
-
-
+  <div class="row container section">
     <div class="col s12 m4 push-m8 center-align">
       <img src="img/skills-shamir-sp.png" style="max-width:230px;">
-
       <p>
         <a href="resume.pdf" download class="btn btn-floating pulse">
           <i class="fas fa-download"></i>
         </a>
       </p>
       <p>Download Resume</p>
-
     </div>
-
     <div class="col s12 m8 pull-m4">
-      <h2 class="grey-text text-darken-1 center-align" id="12">Skills</h2>
+      <h2 class="grey-text text-darken-1 center-align" id="18">Skills</h2>
       <div class="bar b1 z-depth-3">HTML5</div>
       <div class="bar b2 z-depth-3">CSS3</div>
       <div class="bar b3 z-depth-3">JavaScript</div>
@@ -264,24 +336,18 @@
       <div class="bar b7 z-depth-3">Node.js</div>
       <div class="bar b8 z-depth-3">React.js</div>
     </div>
-
   </div>
   <!-- End Skills & Learning Section -->
 
-
-
-
-  <div class="divider container"></div>
-
-
+  <div class="divider container" id="contact"></div>
 
   <!-- Contact Section -->
-  <div class="row container section" id="contact">
+  <div class="row container section" id="contact1">
     <div class="col s12 m4 center-align">
       <img src="img/contact-shamir-sp.png" style="max-width:230px;">
     </div>
     <form class="col s12 m8" id="contactForm">
-      <h2 class="grey-text text-darken-1" id="13">Contact Me</h2>
+      <h2 class="grey-text text-darken-1" id="19">Contact Me</h2>
       <div class="row">
         <div class="input-field col s12 m6">
           <input type="email" name="email" class="validate">
@@ -292,57 +358,47 @@
         <div class="input-field col s12 m12">
           <textarea type="text" class="materialize-textarea" name="message"></textarea>
           <label for="textarea1">Message</label>
-          <a href="#!" onclick="$('#contactForm').submit();" class="button hvr-sweep-to-top" id="14">Send</a>
+          <a href="#!" onclick="$('#contactForm').submit();" class="button hvr-sweep-to-top" id="20">Send</a>
         </div>
       </div>
     </form>
   </div>
   <!-- End Contact Section -->
 
-  <div class="divider container"></div>
+  <div class="divider container" id="end"></div>
 
   <!-- Footer Section -->
   <div class="foot-container valign-wrapper">
-    <p class="footer slow" id="15">Thank you for visiting.</p>
+    <p class="footer" id="21">Thank you for visiting.</p>
   </div>
   <!-- End Footer Section -->
 
-
-
-
-  <!-- <div class="fixed-action-btn">
-    <a class="btn-floating btn-large grey">
-      <i class="large material-icons">mode_edit</i>
-    </a>
-    <ul>
-      <li>
-        <a class="btn-floating red">
-          <i class="material-icons">insert_chart</i>
-        </a>
-      </li>
-      <li>
-        <a class="btn-floating yellow darken-1">
-          <i class="material-icons">format_quote</i>
-        </a>
-      </li>
-      <li>
-        <a class="btn-floating green">
-          <i class="material-icons">publish</i>
-        </a>
-      </li>
-      <li>
-        <a class="btn-floating blue">
-          <i class="material-icons">attach_file</i>
-        </a>
-      </li>
+  <!-- Shell window -->
+  <div class="shell-wrap shell-visible animated slideInUp">
+    <p class="shell-top-bar">Portfolio - Bash</p>
+    <ul class="shell-body">
+      <li class="pwd">cd&nbsp;/Users/shamirwehbe/Portfolio/index.html</li>
+      <li>Hello there. Thanks for visiting my site.</li>
+      <li>You can navigate it using this bash window.</li>
+      <li>Type "help" for a list of commands.</li>
+      <li>Hope you enjoy!</li>
+      <input class="shell-box" onkeydown="terminal(this)">
     </ul>
-  </div> -->
+  </div>
 
-
-
-
-
-
+  <!-- Scripts -->
+  <!-- Added link to firebase -->
+  <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Font Awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <!-- Materialize JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!-- whenInViewport.js -->
+  <script src="js/whenInViewport.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="js/portfolio.js"></script>
 </body>
 
 </html>
