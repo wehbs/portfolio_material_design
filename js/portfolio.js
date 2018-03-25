@@ -150,6 +150,21 @@ $("#21").whenInViewport(function() {
   $("#21").addClass("animated fadeInUp");
 });
 
+// Prevents form from submitting on enter and instead brings you down to the text area field
+$("form input").keydown(function(e) {
+  if (e.keyCode == 13) {
+    var inputs = $(this)
+      .parents("form")
+      .eq(0)
+      .find(":input");
+    if (inputs[inputs.index(this) + 1] != null) {
+      inputs[inputs.index(this) + 1].focus();
+    }
+    e.preventDefault();
+    return false;
+  }
+});
+
 // Contact Form
 $("#contactForm").submit(function(event) {
   event.preventDefault();
