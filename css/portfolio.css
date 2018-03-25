@@ -466,7 +466,7 @@ nav ul li a:hover {
   position: fixed !important;
   bottom: 0px !important;
   right: 0px !important;
-  z-index: 1 !important;
+  z-index: 4 !important;
   opacity: .8 !important;
 }
 
