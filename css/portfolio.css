@@ -370,7 +370,7 @@ nav ul li a:hover {
 @media (max-width: 600px) {
   .card {
     height: 200px;
-    width: 300%;
+    width: 300px;
   }
 }
 
