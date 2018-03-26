@@ -1,13 +1,13 @@
 body {
   overflow-x: hidden !important;
   width: 100% !important;
-  border-style: solid;
-  border-color: transparent;
 }
 
 /* Custom container applied to all bold elements except for navbar */
 .container {
   width: 95%;
+  border-style: solid;
+  border-color: transparent;
 }
 
 /* Shamir Wehbe header */
@@ -62,6 +62,7 @@ nav ul li a:hover {
 .divider {
   margin-top: 70px;
   margin-bottom: 70px;
+  border-style: none;
 }
 
 /* Skill bars */
