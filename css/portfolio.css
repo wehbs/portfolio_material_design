@@ -1,6 +1,8 @@
 body {
-  overflow-x: hidden;
-  width: 100%;
+  overflow-x: hidden !important;
+  width: 100% !important;
+  border-style: solid;
+  border-color: transparent;
 }
 
 /* Custom container applied to all bold elements except for navbar */
@@ -344,20 +346,6 @@ nav ul li a:hover {
   left: 0;
 }
 
-.about-pic-box {
-  margin: 0;
-  height: 400px;
-  width: 400px;
-  position: relative;
-}
-
-.about-text-box {
-  margin: 0;
-  height: 400px;
-  width: 800px;
-  position: relative;
-}
-
 /* Proper sizing for portfolio boxes */
 .card {
   margin: 0;
@@ -467,7 +455,7 @@ nav ul li a:hover {
   bottom: 0px !important;
   right: 0px !important;
   z-index: 4 !important;
-  opacity: .8 !important;
+  opacity: 0.8 !important;
 }
 
 .shell-top-bar {
@@ -478,7 +466,7 @@ nav ul li a:hover {
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) !important;
   font: 16px Arial, sans-serif !important;
   font-size: 0.85em !important;
-  border: 1px solid #CCCCCC !important;
+  border: 1px solid #cccccc !important;
   border-bottom: none !important;
   -webkit-border-top-left-radius: 3px !important;
   -webkit-border-top-right-radius: 3px !important;
@@ -488,31 +476,35 @@ nav ul li a:hover {
   border-top-right-radius: 3px !important;
   background: #f7f7f7 !important;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #f7f7f7 0%, #B8B8B8 100%) !important;
+  background: -moz-linear-gradient(top, #f7f7f7 0%, #b8b8b8 100%) !important;
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #B8B8B8)) !important;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #f7f7f7),
+    color-stop(100%, #b8b8b8)
+  ) !important;
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #f7f7f7 0%, #B8B8B8 100%) !important;
+  background: -webkit-linear-gradient(top, #f7f7f7 0%, #b8b8b8 100%) !important;
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #f7f7f7 0%, #B8B8B8 100%) !important;
+  background: -o-linear-gradient(top, #f7f7f7 0%, #b8b8b8 100%) !important;
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #f7f7f7 0%, #B8B8B8 100%) !important;
+  background: -ms-linear-gradient(top, #f7f7f7 0%, #b8b8b8 100%) !important;
   /* IE10+ */
-  background: linear-gradient(to bottom, #f7f7f7 0%, #B8B8B8 100%) !important;
+  background: linear-gradient(to bottom, #f7f7f7 0%, #b8b8b8 100%) !important;
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#B8B8B8', GradientType=0) !important;
   /* IE6-9 */
 }
-
-
 
 .shell-body {
   margin: 0 !important;
   padding: 5px !important;
   list-style: none !important;
   background: #141414 !important;
-  color: #45D40C !important;
-  font: 0.8em 'Andale Mono', Consolas, 'Courier New' !important;
+  color: #45d40c !important;
+  font: 0.8em "Andale Mono", Consolas, "Courier New" !important;
   line-height: 1.6em !important;
   -webkit-border-bottom-right-radius: 3px !important;
   -webkit-border-bottom-left-radius: 3px !important;
@@ -523,7 +515,7 @@ nav ul li a:hover {
 }
 
 .shell-body li:before {
-  content: '$';
+  content: "$";
   position: absolute !important;
   left: 0 !important;
   top: 0 !important;
