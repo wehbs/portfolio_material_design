@@ -10,6 +10,10 @@ body {
   border-color: transparent;
 }
 
+.nav-wrpper {
+  width: 95%;
+}
+
 /* Shamir Wehbe header */
 
 h1 {
