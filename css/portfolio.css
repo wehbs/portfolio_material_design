@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -7,6 +8,7 @@ body {
 }
 
 /* Custom container applied to all bold elements except for navbar */
+
 .container {
   width: 95%;
 }
@@ -50,11 +52,13 @@ p.white-text {
 }
 
 /* Change materialize default color for links */
+
 nav ul li a:hover {
   background-color: white;
 }
 
 /* Blue hover color for navbar links */
+
 .blue-hover:hover {
   color: #4285f4;
   transition: color 128ms ease-in;
@@ -248,6 +252,7 @@ nav ul li a:hover {
 }
 
 /* Underline From Left */
+
 .hvr-underline-from-left {
   color: rgba(54, 199, 235, 1);
   display: inline-block;
@@ -258,6 +263,7 @@ nav ul li a:hover {
   position: relative;
   overflow: hidden;
 }
+
 .hvr-underline-from-left:before {
   content: "";
   position: absolute;
@@ -274,6 +280,7 @@ nav ul li a:hover {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .hvr-underline-from-left:hover:before,
 .hvr-underline-from-left:focus:before,
 .hvr-underline-from-left:active:before {
@@ -281,6 +288,7 @@ nav ul li a:hover {
 }
 
 /* Underline From Center */
+
 .hvr-underline-from-center {
   color: #8bc34a;
   display: inline-block;
@@ -291,6 +299,7 @@ nav ul li a:hover {
   position: relative;
   overflow: hidden;
 }
+
 .hvr-underline-from-center:before {
   content: "";
   position: absolute;
@@ -307,6 +316,7 @@ nav ul li a:hover {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .hvr-underline-from-center:hover:before,
 .hvr-underline-from-center:focus:before,
 .hvr-underline-from-center:active:before {
@@ -315,6 +325,7 @@ nav ul li a:hover {
 }
 
 /* Underline From Right */
+
 .hvr-underline-from-right {
   color: #8bc34a;
   display: inline-block;
@@ -325,6 +336,7 @@ nav ul li a:hover {
   position: relative;
   overflow: hidden;
 }
+
 .hvr-underline-from-right:before {
   content: "";
   position: absolute;
@@ -341,6 +353,7 @@ nav ul li a:hover {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .hvr-underline-from-right:hover:before,
 .hvr-underline-from-right:focus:before,
 .hvr-underline-from-right:active:before {
@@ -348,6 +361,7 @@ nav ul li a:hover {
 }
 
 /* Proper sizing for portfolio boxes */
+
 .card {
   margin: 0;
   height: 300px;
@@ -367,43 +381,56 @@ nav ul li a:hover {
   padding: 0;
 }
 
-.card-content > * {
+.card-content>* {
   margin: 15px;
 }
 
 /* Form color overrides for materializeCSS */
+
 /* label color */
+
 .input-field label {
   color: #9e9e9e !important;
 }
+
 /* label focus color */
-.input-field input[type="email"]:focus + label {
+
+.input-field input[type="email"]:focus+label {
   color: #8bc34a !important;
 }
-.input-field textarea[type="text"]:focus + label {
+
+.input-field textarea[type="text"]:focus+label {
   color: #8bc34a !important;
 }
+
 /* label underline focus color */
+
 .input-field input[type="email"]:focus {
   border-bottom: 1px solid #9e9e9e !important;
   box-shadow: 0 1px 0 0 #9e9e9e !important;
 }
+
 .input-field textarea[type="text"]:focus {
   border-bottom: 1px solid #9e9e9e !important;
   box-shadow: 0 1px 0 0 #9e9e9e !important;
 }
+
 /* valid color */
+
 .input-field input[type="email"].valid {
   border-bottom: 1px solid #9e9e9e !important;
   box-shadow: 0 1px 0 0 #9e9e9e !important;
 }
+
 /* invalid color */
+
 .input-field input[type="email"].invalid {
   border-bottom: 1px solid red !important;
   box-shadow: 0 1px 0 0 red !important;
 }
 
 /* Custom CSS to change materializeCSS Toast */
+
 #toast-container {
   min-width: 100% !important;
   bottom: 0% !important;
@@ -411,11 +438,13 @@ nav ul li a:hover {
   right: auto !important;
   left: 0% !important;
 }
+
 .toast {
   background-color: #8bc34a !important;
 }
 
 /* Prevents zoom on iOS */
+
 #contact1 input,
 #contact1 textarea {
   font-size: 16px;
@@ -427,20 +456,24 @@ nav ul li a:hover {
 }
 
 /* Footer CSS */
+
 .foot-container {
   background: url(../img/footer-shamir-sp.png) no-repeat center;
   background-size: cover;
   height: 600px;
   position: relative;
 }
+
 .footer {
   color: white !important;
   font-size: 90px;
   font-weight: 800;
-  width: 10%;
+  height: 150px;
+  margin: 0;
 }
 
 /* Terminal window CSS */
+
 .shell-visible {
   display: none;
 }
@@ -479,13 +512,7 @@ nav ul li a:hover {
   /* Old browsers */
   background: -moz-linear-gradient(top, #f7f7f7 0%, #b8b8b8 100%) !important;
   /* FF3.6+ */
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0%, #f7f7f7),
-    color-stop(100%, #b8b8b8)
-  ) !important;
+  background: -webkit-gradient( linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #b8b8b8)) !important;
   /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top, #f7f7f7 0%, #b8b8b8 100%) !important;
   /* Chrome10+,Safari5.1+ */

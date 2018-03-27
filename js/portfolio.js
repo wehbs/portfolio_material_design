@@ -43,14 +43,14 @@ $(window).scroll(function() {
 // =================================================
 function checkWidth() {
   if ($(window).width() < 600) {
-    $("#about").removeClass("valign-wrapper");
-    $("#skills").removeClass("valign-wrapper");
-    $("#contact").removeClass("valign-wrapper");
+    $(".about").removeClass("valign-wrapper");
+    $(".skills").removeClass("valign-wrapper");
+    $(".contact").removeClass("valign-wrapper");
     $(".fa-terminal").removeClass("animated tada infinite");
   } else {
-    $("#about").addClass("valign-wrapper");
-    $("#skills").addClass("valign-wrapper");
-    $("#contact").addClass("valign-wrapper");
+    $(".about").addClass("valign-wrapper");
+    $(".skills").addClass("valign-wrapper");
+    $(".contact").addClass("valign-wrapper");
     $(".fa-terminal").addClass("animated tada infinite");
   }
 }
@@ -147,7 +147,16 @@ $("#20").whenInViewport(function() {
   $("#20").addClass("animated fadeInUp");
 });
 $("#21").whenInViewport(function() {
-  $("#21").addClass("animated fadeInUp");
+  $("#21").addClass("animated slideInLeft");
+});
+$("#22").whenInViewport(function() {
+  $("#22").addClass("animated slideInLeft");
+});
+$("#23").whenInViewport(function() {
+  $("#23").addClass("animated slideInLeft");
+});
+$("#24").whenInViewport(function() {
+  $("#24").addClass("animated slideInLeft");
 });
 
 // Prevents form from submitting on enter and instead brings you down to the text area field
